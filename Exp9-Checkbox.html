@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Checkbox</title>
+</head>
+<body>
+    <input type="checkbox" name="byke" id="">I have Byke <br>
+    <input type="checkbox" name="car" id="">I have Car <br>
+    <input type="checkbox" name="houre" id="">I have House <br>
+    <button type="button" onclick="displayRadioValue()">
+        Submit
+    </button>
+    <script>
+        function displayRadioValue() {
+            var ele = document.querySelectorAll('input[type=checkbox]:checked');
+            console.log(ele.name);
+            
+        }
+    </script>
+ 
+</body>
+
+</html>

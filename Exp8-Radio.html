@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Radio Button</title>
+</head>
+<body>
+    What is Pizzasize
+    <br>
+    <input class="hi" type="radio" name="Pizzasize" value="S">Small <br>
+    <input class="hi"  type="radio" name="Pizzasize" value="L">Large <br>
+    <input class="hi" type="radio" name="Pizzasize" value="M">Medium
+    <button type="button" onclick="displayRadioValue()">
+        Submit
+    </button>
+    <script>
+        function displayRadioValue() {
+            var ele = document.querySelector('input[name=Pizzasize]:checked');
+            console.log(ele.value);
+            
+        }
+    </script>
+</body>
+</html>
